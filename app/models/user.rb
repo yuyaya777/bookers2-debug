@@ -24,6 +24,8 @@ class User < ApplicationRecord
   def following?(user)
     followings.include?(user)
   end
+  
+  
 
   attachment :profile_image, destroy: false
 
